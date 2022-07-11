@@ -102,9 +102,9 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'EB Garamond', serif;
   padding: 0 2em;
-  font-size: 1.25em;
+  font-size: 1em;
   height: 100%;
   color: #fff;
 }
@@ -112,18 +112,22 @@ body {
 header,
 footer {
   align-items: center;
-  background-color: #222;
+  background-color: #654236;
+  font-size: 2rem;
   display: flex;
-  height: 80px;
-  justify-content: center;
+  height: auto;
+  padding: 2%;
+  justify-content: left;
   width: 100%;
 }
 
 main {
   align-items: center;
-  background-color: #ccc;
+  background-color: #db995a;
   display: flex;
-  height: 250px;
+  font-size: 1.5rem;
+  height: auto;
+  padding: 2%;
   justify-content: center;
   width: 100%;
 }
@@ -136,23 +140,49 @@ main {
 
 .flex-container {
     align-items: center;
+    background-color: #d6d4a0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     justify-content: space-between;
-
 }
+
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 2px solid #654236; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    font-family: 'Montserrat', sns-serif;
+    font-size: 1.5em;
+ } 
+ 
+ h2 span { 
+     background:#da7635; 
+     padding:0 10px; 
+ }
 
 .flex-items {
     align-items: center;
+    background-color: #da7635;
     color: #fff;
     display: flex;
     justify-content: center;
+    padding: 2%;
     line-height: 1.5em;
-    font-size: 1.6em;
-    background-color: #f16059;
+    font-size: 1rem;
     width: 30%;
-    height: 200px;
+    flex-direction: column;
+    flex-basis: 100%;
+    height: auto;
+}
+
+strong {
+    color: #654236;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 /* ==========================================================================
@@ -236,13 +266,18 @@ main {
    ========================================================================== */
 
 /* If you'd like to try a different layout on Desktop and larger screens: */
-@media (min-width: 1200px) {
-  #div-1,
-  #div-2{
+@media (min-width: 768px) {
+  #div-1, #div-2 {
+      flex: 1 1 40%;
+      height: 200px;
       /* set your flex value to 1 50% */
   }
 
+  #div-1 {
+    padding-top: -2%;
+  }
   #div-3 {
+    flex: 1 100%;
     /* set your flex value to 1 100% */
   }
 }
