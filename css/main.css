@@ -11,9 +11,9 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /*
@@ -25,13 +25,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -39,12 +39,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -59,7 +59,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -67,9 +67,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -77,7 +77,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -85,10 +85,10 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* ==========================================================================
@@ -96,93 +96,85 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: #93a70b;
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'EB Garamond', serif;
-  padding: 0 2em;
+  background-color:#93a70b;
+  color: #000;
+  width: 100%;
+  margin: 1.5%;
   font-size: 1em;
-  height: 100%;
-  color: #fff;
+  font-family: 'EB Garamond', serif;
+  /*padding: 0 2em;
+  height: 100%;*/
 }
 
-header,
-footer {
-  align-items: center;
-  background-color: #654236;
-  font-size: 2rem;
-  display: flex;
-  height: auto;
-  padding: 2%;
-  justify-content: left;
+/*Font-families selected
+font-family: 'EB Garamond', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;*/
+
+header {
+/*  color: #ae9772;*/
+  color: #dabe12;
+  background-color:  #58290b;
+}
+
+span {
+  /*color: #bd6e0a;
+  color: #dabe12;*/
+  color: #93a70b;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
   width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #58290b;
+  line-height: 0.1em;
+  margin: 2% 1%;
 }
 
-main {
-  align-items: center;
-  background-color: #db995a;
-  display: flex;
-  font-size: 1.5rem;
-  height: auto;
-  padding: 2%;
-  justify-content: center;
-  width: 100%;
-}
-
-header,
-footer,
-main {
-
-}
-
-.flex-container {
-    align-items: center;
-    background-color: #d6d4a0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    justify-content: space-between;
-}
-
-h2 {
-    width: 100%; 
-    text-align: center; 
-    border-bottom: 2px solid #654236; 
-    line-height: 0.1em;
-    margin: 10px 0 20px;
-    font-family: 'Montserrat', sns-serif;
-    font-size: 1.5em;
- } 
- 
- h2 span { 
-     background:#da7635; 
-     padding:0 10px; 
- }
-
-.flex-items {
-    align-items: center;
-    background-color: #da7635;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    line-height: 1.5em;
-    font-size: 1rem;
-    width: 30%;
-    flex-direction: column;
-    flex-basis: 100%;
-    height: auto;
+h3 span {
+  background: #58290b;
+  padding: 0 1%;
 }
 
 strong {
-    color: #654236;
+  color: #58290b;
+  font-size: 1.1rem;
 }
 
-p {
-    font-size: 1.5rem;
+.item {
+  padding: 0 2%;
+}
+
+.foot-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #58290b;
+  color: #dabe12;
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+  margin-top: 2%;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex: wrap;
+    }  
+    .item-2 {
+        border-right: 1px solid #58290b;
+        border-left: 1px solid #58290b;
+    }
 }
 
 /* ==========================================================================
@@ -194,7 +186,7 @@ p {
  */
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 /*
@@ -203,14 +195,14 @@ p {
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /*
@@ -221,12 +213,12 @@ p {
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 
 /*
@@ -234,7 +226,7 @@ p {
  */
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -251,12 +243,12 @@ p {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /* ==========================================================================
@@ -267,10 +259,11 @@ p {
 
 /* If you'd like to try a different layout on Desktop and larger screens: */
 @media (min-width: 768px) {
-  #div-1, #div-2 {
-      flex: 1 1 40%;
-      height: 200px;
-      /* set your flex value to 1 50% */
+  #div-1,
+  #div-2 {
+    flex: 1 1 40%;
+    height: 200px;
+    /* set your flex value to 1 50% */
   }
 
   #div-1 {
@@ -283,10 +276,10 @@ p {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -296,72 +289,72 @@ p {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-    /*
+  /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    /*
+  /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-    thead {
-        display: table-header-group;
-    }
+  thead {
+    display: table-header-group;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    img {
-        max-width: 100% !important;
-    }
+  img {
+    max-width: 100% !important;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
